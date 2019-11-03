@@ -6,7 +6,7 @@
 #    By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/30 03:33:28 by oelazzou          #+#    #+#              #
-#    Updated: 2019/07/30 14:35:04 by oelazzou         ###   ########.fr        #
+#    Updated: 2019/11/03 14:41:21 by oelazzou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,7 @@ FILE = ft_atoi.c \
 	   ft_strtrim.c \
 	   ft_tolower.c \
 	   ft_toupper.c \
+	   ft_count_tab.c \
 	   get_next_line.c
 FLAGS = -Wall -Wextra -Werror
 OBJ = $(FILE:.c=.o)

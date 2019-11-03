@@ -6,7 +6,7 @@
 /*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/26 14:38:46 by oelazzou          #+#    #+#             */
-/*   Updated: 2019/07/27 18:08:45 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/03 14:41:07 by oelazzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					memcmp(const void *s1, const void *s2, size_t n);
+int					ft_count_tab(char **tab);
 size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *str);
 char				*ft_strndup(const char *s1, size_t n);
