@@ -6,7 +6,7 @@
 /*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/02 15:51:47 by oelazzou          #+#    #+#             */
-/*   Updated: 2019/11/02 23:23:23 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/05 22:56:09 by oelazzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,17 @@
 # include <stdio.h>
 # define H		1900
 # define V		1200
+
+typedef	struct s_bres
+{
+	int dx;
+	int dy;
+	int sx;
+	int sy;
+	int err;
+	int err2;
+}				t_bres;
+
 
 typedef struct	s_point
 {
@@ -53,4 +64,10 @@ void			up(t_data *data);
 void			down(t_data *data);
 void			free_twod(char  **arr);
 void			ft_error(char *name);
+
+void			increment_value(t_data *data);
+void			change_color(t_data *data);
+void			zoom_in_out(t_data *data);
+void			show_menu(t_data *data);
+void			menu_(t_data *data);
 #endif

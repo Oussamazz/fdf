@@ -6,12 +6,12 @@
 #    By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/23 19:48:26 by kbahrar           #+#    #+#              #
-#    Updated: 2019/11/02 23:28:11 by oelazzou         ###   ########.fr        #
+#    Updated: 2019/11/05 22:01:22 by oelazzou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fdf
-SRC =  src/ft_check.c src/main.c src/window.c src/key.c src/rotation.c src/free.c src/ft_error.c
+SRC =  src/ft_check.c src/main.c src/draw_line.c src/key.c src/rotation.c src/free.c src/ft_error.c src/inc_value.c src/menu.c
 OBJ = $(SRC:%.c=%.o)
 LIBF = libft/libft.a
 
@@ -19,7 +19,7 @@ all:$(NAME)
 
 $(NAME): $(OBJ)
 	make -C libft
-	gcc -Wall -Wextra -Werror -I /usr/local/include $(SRC) -L /usr/local/lib -lmlx -L libft/ -lft -framework OpenGL -framework AppKit -o $(NAME)
+	gcc -Wall -Wextra -Werror -I /usr/local/include $(SRC) -L /usr/local/lib -lmlx -L libft/ -lft  -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	rm -rf $(OBJ)

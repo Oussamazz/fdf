@@ -14,6 +14,12 @@ int		key_press(int key, void *param)
 		right_left(key, param);
 	else if (key == 53)
 		exit(0);
+	else if (key == 24)
+		increment_value(param);
+	else if (key == 8)
+		change_color(param);
+	else if (key == 46)
+		menu_(param);
 	else if (key == 15 || key == 17)
 		bonus_rotation(key, param);
 	return (0);

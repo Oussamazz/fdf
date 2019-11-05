@@ -6,7 +6,7 @@
 /*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 00:06:58 by ybenbrai          #+#    #+#             */
-/*   Updated: 2019/11/02 22:58:23 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/05 11:13:49 by oelazzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static	void	iso(int *x, int *y, int z)
 	angel = 0.523599;
 	*x = (previous_x - previous_y) * cos(angel);
 	*y = ((previous_x + previous_y) * sin(angel)) - z;
+
 }
 
 void			rotate(t_data *data)
@@ -31,7 +32,7 @@ void			rotate(t_data *data)
 	int			j;
 
 	i = -1;
-	while (++i <= data->hight - 1)
+	while (++i < data->hight)
 	{
 		j = -1;
 		while (++j < data->width)

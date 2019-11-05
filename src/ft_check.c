@@ -23,16 +23,16 @@ static void	ft_checkfile2(t_data *data, char **tab, int i)
 
 	j = -1;
 	data->width = ft_count_tab(tab);
-	data->p[i] = (t_point *)malloc(sizeof(t_point) * data->width);
+	data->p[i] = (t_point *)ft_memalloc(sizeof(t_point) * data->width);
 	while (tab[++j])
 	{
 		data->p[i][j].value = ft_atoi(tab[j]);
 		if (data->p[i][j].value == 0)
-			data->p[i][j].color = 0xFF0000;
+			data->p[i][j].color = 177881;
 		else
-			data->p[i][j].color = 0xFFFF00;
+			data->p[i][j].color = 0x7A0808;
 		data->p[i][j].x = j * data->zoom + H / 3;
-		data->p[i][j].y = i * data->zoom + V / 3;
+		data->p[i][j].y = i * data->zoom + V / 9;
 	}
 	free_twod(tab);
 }
@@ -43,7 +43,7 @@ static void	ft_check_file(int fd, t_data *data)
 	char	**tab;
 	int		i;
 
-	data->p = (t_point **)malloc(sizeof(t_point *) * data->hight);
+	data->p = (t_point **)ft_memalloc(sizeof(t_point *) * data->hight);
 	i = 0;
 	while (get_next_line(fd, &line) > 0)
 	{
