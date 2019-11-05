@@ -6,7 +6,7 @@
 /*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/02 15:51:47 by oelazzou          #+#    #+#             */
-/*   Updated: 2019/11/05 22:56:09 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/05 23:33:38 by oelazzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,5 @@ void			change_color(t_data *data);
 void			zoom_in_out(t_data *data);
 void			show_menu(t_data *data);
 void			menu_(t_data *data);
+void			print_pipes(t_data *data, int i, int j, int pos);
 #endif
