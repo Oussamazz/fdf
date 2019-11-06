@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotation.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sberrich <sberrich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 00:06:58 by ybenbrai          #+#    #+#             */
-/*   Updated: 2019/11/05 11:13:49 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/07 00:27:52 by sberrich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,10 @@ static	void	iso(int *x, int *y, int z)
 	
 	previous_x = *x;
 	previous_y = *y;
-	angel = 0.523599;
+	angel = 0.5;
 	*x = (previous_x - previous_y) * cos(angel);
 	*y = ((previous_x + previous_y) * sin(angel)) - z;
+		
 
 }
 
@@ -37,6 +38,7 @@ void			rotate(t_data *data)
 		j = -1;
 		while (++j < data->width)
 			iso(&data->p[i][j].x, &data->p[i][j].y, data->p[i][j].value);
+
 	}
 }
 
@@ -45,12 +47,5 @@ void			ft_zoom(t_data *data, char **tab)
 	int x;
 
 	x = ft_count_tab(tab);
-	if (x > 200)
-		data->zoom = 2;
-	else if (x <= 200 && x > 50)
-		data->zoom = 4;
-	else if (x >= 27 && x <= 50)
-		data->zoom = 8;
-	else
-		data->zoom = 35;
+	data->zoom = 500 / x;
 }

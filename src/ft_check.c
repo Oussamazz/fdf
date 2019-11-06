@@ -33,6 +33,7 @@ static void	ft_checkfile2(t_data *data, char **tab, int i)
 			data->p[i][j].color = 0x7A0808;
 		data->p[i][j].x = j * data->zoom + H / 3;
 		data->p[i][j].y = i * data->zoom + V / 9;
+		data->p[i][j].value *= data->zoom;
 	}
 	free_twod(tab);
 }

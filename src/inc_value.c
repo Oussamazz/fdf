@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   inc_value.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sberrich <sberrich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 18:07:02 by oelazzou          #+#    #+#             */
-/*   Updated: 2019/11/05 21:28:09 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/06 23:48:28 by sberrich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "fdf.h"
 
-void		increment_value(t_data *data)
+/*void		increment_value(t_data *data)
 {
 	int i;
 	int j;
@@ -28,7 +28,7 @@ void		increment_value(t_data *data)
 	}
 	bonus_rotation(15, data);
 }
-
+*/
 void		change_color(t_data *data)
 {
 	int i;

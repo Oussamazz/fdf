@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fdf.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sberrich <sberrich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/02 15:51:47 by oelazzou          #+#    #+#             */
-/*   Updated: 2019/11/05 23:33:38 by oelazzou         ###   ########.fr       */
+/*   Updated: 2019/11/07 00:29:37 by sberrich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void			down(t_data *data);
 void			free_twod(char  **arr);
 void			ft_error(char *name);
 
-void			increment_value(t_data *data);
+/*void			increment_value(t_data *data);*/
 void			change_color(t_data *data);
 void			zoom_in_out(t_data *data);
 void			show_menu(t_data *data);

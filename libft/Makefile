@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: oelazzou <oelazzou@student.42.fr>          +#+  +:+       +#+         #
+#    By: sberrich <sberrich@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/30 03:33:28 by oelazzou          #+#    #+#              #
-#    Updated: 2019/11/03 14:41:21 by oelazzou         ###   ########.fr        #
+#    Updated: 2019/11/07 00:37:30 by sberrich         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,7 +78,7 @@ FILE = ft_atoi.c \
 	   ft_toupper.c \
 	   ft_count_tab.c \
 	   get_next_line.c
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -g
 OBJ = $(FILE:.c=.o)
 
 $(NAME): 
